@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Blog</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
-          rel="stylesheet" 
-          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
-          crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        html{
+        html {
             scroll-behavior: smooth;
         }
-        body{
-            background: url(background-travel.jpg);
+
+        body {
+            background: linear-gradient(#0C6478, #46DFB1);
+            /*background: url(background-travel.jpg);
             background-repeat: no-repeat;
             background-size: cover;
-            background-attachment: fixed;
+            background-attachment: fixed;*/
             font-family: monospace;
         }
 
-        @media (max-width: 1080px) { 
+        section {
+            scroll-margin-top: 80px;
+        }
+
+        @media (max-width: 1080px) {
             #home img {
                 object-fit: cover;
                 height: auto;
                 width: auto;
             }
         }
+
         @media (max-height: 1920px) {
             #home img {
                 object-fit: cover;
@@ -35,70 +41,122 @@
                 width: auto;
             }
         }
-    </style> 
+        
+    </style>
 </head>
+
 <body style="isolation: isolate;">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position: sticky; top: 0; z-index: 1020;">
+    <nav class="navbar navbar-expand-lg navbar-dark"
+        style="background-color: #50919b; position: sticky; top: 0; z-index: 1020;">
         <div class="container">
-            <a class="navbar-brand" href="#"><i class="fa fa-globe" aria-hidden="true"></i> TravelBlog</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#"><i class="fa fa-globe" aria-hidden="true"></i> TravelBlog || Guide</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#home"><i class="fa fa-fw fa-home"></i>Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#blogs"><i class="fa fa-map-marker" aria-hidden="true"></i> Blogs</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about"><i class="fa fa-question" aria-hidden="true"></i> About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact"><i class="fa fa-fw fa-envelope"></i>Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Destination"><i class="fa fa-map-marker"
+                                aria-hidden="true"></i> Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about"><i class="fa fa-question"
+                                aria-hidden="true"></i> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact"><i
+                                class="fa fa-fw fa-envelope"></i>Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section id="home" class="text-center text-black d-flex align-items-center justify-content-center" style="height: fit-content; margin: 0;">
-        <div>
-            <h1 class="display-3 fw-bold">Welcome to my TravelBlog</h1>
-            <p class="lead">Explore the world one blog at a time.</p>
+    <section id="home" class="text-center text-black d-flex align-items-center justify-content-center"
+        style="margin: 0;">
+        <div style="padding-left: 15vh; padding-right: 15vh;">
+            <h1 class="display-3 fw-bold">Boracay: A Complete Travel Guide to the Island Paradise</h1>
+            <p class="lead">Boracay, a small island and one of the top islands in the Philippines, is a tropical
+                paradise known for its powdery white sand beaches, crystal-clear waters, sunsets, and vibrant nightlife.
+                Recognized as one of the world's best islands, Boracay offers an unforgettable experience for every
+                traveler. Here's a complete guide to help you plan your trip to this stunning destination.</p>
         </div>
     </section>
 
-    <section class="d-flex align-items-center justify-content-center" style="height: auto; margin: 0; padding: 0; box-sizing: inherit;">
-        <div style="max-width: 100%; max-height: 100%; aspect-ratio: 16 / 9; display: flex; align-items: center; justify-content: center;">
-            <img src="boracay.png" alt="Intro" style="max-width: 100%; height: auto; vertical-align: top; opacity: 90%; border-left: 10vh; border-right: 10vh;">
+    <section class="d-flex align-items-center justify-content-center"
+        style="height: auto; margin: 0; padding: 0; box-sizing: inherit;">
+        <div style="width: 100%; position: relative; overflow: hidden;">
+            <img src="boracay.png" alt="Intro"
+                style="width: 100%; height: auto; object-fit: cover; aspect-ratio: 16 / 9;">
         </div>
     </section>
 
-    <section id="blogs" class="py-5" style="margin-top: 0;">
-        <div class="container" style="margin-top: 15vh; margin-bottom: 5vh; padding-top: 5vh; padding-bottom: 10vh; background:  hsla(210, 20%, 98%, 0.247);">
-            <h2 class="text-center mb-4">Recent Blogs</h2>
+    <section id="Destination" class="py-5" style="margin-top: 1vh; scroll-margin-top: 1vh;" >
+        <div class="container"
+            style="margin-bottom: 5vh; padding-top: 5vh; padding-bottom: 10vh; background:  hsla(210, 20%, 98%, 0.247);">
+            <h2 class="text-center mb-4">Tourist Destination Information</h2>
+            <p class="text-center">Boracay is located in the Western Visayas region of the Philippines, under the
+                municipality of Malay, Aklan. The island's most famous attraction is White Beach, a 4-kilometer of
+                pristine sand lined with resorts, restaurants, and bars. Other notable spots include:</p>
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="boracay.png" class="card-img-top" alt="Beach">
+                        <img src="Puka-beach.jpeg" class="card-img-top" alt="Puka-Beach">
                         <div class="card-body">
-                            <h5 class="card-title">Top 10 Beaches to Visit</h5>
-                            <p class="card-text">Discover the most serene beaches that you should add to your bucket list.</p>
-                            <a href="#" class="btn btn-primary">Read More</a>
+                            <h5 class="card-title">Puka Shell Beach</h5>
+                            <p class="card-text" style="text-align: justify;">Located on the northern tip of the island,
+                                Puka Beach offers a more
+                                rustic experience with natural beauty and an untouched feel. Known for its coral and
+                                puka shells scattered along the shore, it’s perfect for those seeking a quieter escape
+                                and a more rugged beach experience.</p>
+                            <a href="https://guidetothephilippines.ph/destinations-and-attractions/puka-beach" class="btn btn-primary">Read More</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="boracay.png" class="card-img-top" alt="Mountain">
+                        <img src="Bulabog-beach.jpeg" class="card-img-top" alt="Bulabog-beach">
                         <div class="card-body">
-                            <h5 class="card-title">Mountain Adventures</h5>
-                            <p class="card-text">Experience the thrill of hiking the world's most iconic mountains.</p>
-                            <a href="#" class="btn btn-primary">Read More</a>
+                            <h5 class="card-title">Bulabog Beach</h5>
+                            <p class="card-text" style="text-align: justify;">Located on the island’s eastern side,
+                                Bulabog Beach is a hub for water sports enthusiasts, especially for kitesurfing and
+                                windsurfing. It has a vibrant atmosphere with a backdrop of colorful sails and a
+                                laid-back vibe in the evening.</p>
+                            <a href="https://guidetothephilippines.ph/destinations-and-attractions/bulabog-beach" class="btn btn-primary">Read More</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="boracay.png" class="card-img-top" alt="City">
+                        <img src="Mount-Luho.jpeg" class="card-img-top" alt="Mount-Luho">
                         <div class="card-body">
-                            <h5 class="card-title">Urban Getaways</h5>
-                            <p class="card-text">Explore vibrant cities and their unique culture and lifestyle.</p>
-                            <a href="#" class="btn btn-primary">Read More</a>
+                            <h5 class="card-title">Mount Luho</h5>
+                            <p class="card-text" style="text-align: justify;">Mt. Luho is the tallest peak on Boracay
+                                Island, standing at about 330 feet above sea level. Located in Aklan, its viewing deck
+                                offers panoramic views of the province and the white sand shores lining it.</p>
+                            <a href="https://guidetothephilippines.ph/destinations-and-attractions/mt-luho" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="Willys-rock.jpeg" class="card-img-top" alt="Willys-rock">
+                        <div class="card-body">
+                            <h5 class="card-title">Mount Luho</h5>
+                            <p class="card-text" style="text-align: justify;">Willy's Rock is a volcanic rock formation that is located along the
+                                shallow waters of Station 1 in Boracay. Apart from its unique shape, it has also become a popular attraction due to
+                                the shrine dedicated to the Blessed Virgin Mary that sits on its surface.</p>
+                            <a href="https://guidetothephilippines.ph/destinations-and-attractions/willy-s-rock" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+
                         </div>
                     </div>
                 </div>
@@ -106,40 +164,53 @@
         </div>
     </section>
 
-    
-    <section id="about" class="py-5" style="margin-top: 10vh; background: hsla(210, 20%, 98%, 0.247);">
+
+    <section id="about" class="py-5" style="margin-top: -8vh; background: hsla(210, 20%, 98%, 0.247);">
         <div class="container">
             <h2 class="text-center mb-4">About Me</h2>
             <div class="row align-items-center">
                 <div class="col-md-6 text-center d-flex justify-content-center">
-                    <img src="https://scontent.fmnl3-4.fna.fbcdn.net/v/t39.30808-1/316313578_2703998216403341_8294034781152574482_n.jpg?stp=dst-jpg_s200x200&_nc_cat=101&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeHwWgW8YU2CgPHQJ77fWI9rGQQPVIv7IxEZBA9Ui_sjEfnPUomMka5UPynI1A_giFYJzqY7O8dVx_DYKjNB0Msf&_nc_ohc=Ye8C5dVzA4oQ7kNvgGlvLi3&_nc_zt=24&_nc_ht=scontent.fmnl3-4.fna&_nc_gid=Ag1STIjbdcPXaChIo_XRSlC&oh=00_AYCR_LUmdWmNWbWisjOSIbvK7O3oHT8qR4SyCfDTVNz4NA&oe=673FA5D0" 
-                        alt="About Me" 
-                        class="img-fluid" 
-                        style="border-radius: 50%;">
+                    <a href="https://www.facebook.com/aierac"><img src="https://scontent.fmnl3-4.fna.fbcdn.net/v/t39.30808-1/316313578_2703998216403341_8294034781152574482_n.jpg?stp=dst-jpg_s200x200&_nc_cat=101&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeHwWgW8YU2CgPHQJ77fWI9rGQQPVIv7IxEZBA9Ui_sjEfnPUomMka5UPynI1A_giFYJzqY7O8dVx_DYKjNB0Msf&_nc_ohc=Ye8C5dVzA4oQ7kNvgGlvLi3&_nc_zt=24&_nc_ht=scontent.fmnl3-4.fna&_nc_gid=Ag1STIjbdcPXaChIo_XRSlC&oh=00_AYCR_LUmdWmNWbWisjOSIbvK7O3oHT8qR4SyCfDTVNz4NA&oe=673FA5D0"
+                        alt="About Me" class="img-fluid" style="border-radius: 50%;"></a>
                 </div>
                 <div class="col-md-6">
                     <br><br>
                     <h3>Discover Our Passion for Travel</h3>
-                    <p>At TravelBlog, we believe in exploring the world with curiosity and wonder. Our mission is to inspire and guide travelers with authentic stories, stunning destinations, and practical tips for every journey.</p>
-                    <p>Whether you're looking for breathtaking landscapes, hidden gems, or vibrant cityscapes, our blog covers it all. Join us as we uncover the beauty and diversity of our planet, one adventure at a time.</p>
+                    <p>At TravelBlog, we believe in exploring the world with curiosity and wonder. Our mission is to
+                        inspire and guide travelers with authentic stories, stunning destinations, and practical tips
+                        for every journey.</p>
+                    <p>Whether you're looking for breathtaking landscapes, hidden gems, or vibrant cityscapes, our blog
+                        covers it all. Join us as we uncover the beauty and diversity of our planet, one adventure at a
+                        time.</p>
                     <a href="#contact" class="btn btn-primary">Get in Touch</a>
                 </div>
             </div>
         </div>
     </section>
-    
 
-    
+
+
     <section id="contact" class="py-5" style="background: hsla(210, 20%, 98%, 0.247); margin-top: 5vh;">
         <div class="container">
-            <h2 class="text-center mb-4">Contact Us</h2>
+            <h2 class="text-center mb-4">Contact Us <i class="fa fa-envira" aria-hidden="true"></i></h2>
             <div class="row">
                 <div class="col-md-6">
-                    <h5>Get in Touch</h5>
-                    <p>We'd love to hear from you! Whether you have a question, feedback, or just want to share your travel story, feel free to reach out.</p>
-                    <p><strong>Email:</strong> contact@travelblog.com</p>
-                    <p><strong>Phone:</strong> +1 234 567 890</p>
-                    <p><strong>Address:</strong> 123 Wanderlust Lane, Adventure City</p>
+                    <h5>Get in Touch <i class="fa fa-comment" aria-hidden="true"></i></h5>
+                    <p>We'd love to hear from you! Whether you have a question, feedback, or just want to share your
+                        travel story, feel free to reach out.</p>
+                    <h5>Here are some essential numbers for your trip <i class="fa fa-phone-square"
+                            aria-hidden="true"></i></h5>
+                    <p><strong>Tourism Office <i class="fa fa-volume-control-phone" aria-hidden="true"></i></strong>
+                        (+63) 36 288 5260.</p>
+                    <p><strong>Police Station <i class="fa fa-volume-control-phone" aria-hidden="true"></i></strong>
+                        (+63) 36 288 8025.</p>
+                    <p><strong>Caticlan Jetty Port <i class="fa fa-volume-control-phone"
+                                aria-hidden="true"></i></strong> (+63) 36 288 5260.</p>
+                    <p><strong>Kalibo International Airport <i class="fa fa-volume-control-phone"
+                                aria-hidden="true"></i></strong> (+63) 36 262 3264.</p>
+                    <p>With its breathtaking views and endless activities, Boracay promises a perfect blend of
+                        relaxation and adventure. Make it your next destination and create memories that will last a
+                        lifetime!</p>
                 </div>
                 <div class="col-md-6">
                     <form>
@@ -153,7 +224,8 @@
                         </div>
                         <div class="mb-3">
                             <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" rows="5" placeholder="Write your message"></textarea>
+                            <textarea class="form-control" id="message" rows="5"
+                                placeholder="Write your message"></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Send Message</button>
                     </form>
@@ -163,7 +235,7 @@
     </section>
 
 
-    <footer class="bg-dark text-white text-center py-3">
+    <footer class="text-white text-center py-3" style="background-color: #0C6478;">
         <p>&copy; 2024 Aeira Clitar TravelBlog. All rights reserved.</p>
     </footer>
 
@@ -172,4 +244,5 @@
         crossorigin="anonymous"></script>
 
 </body>
+
 </html>
