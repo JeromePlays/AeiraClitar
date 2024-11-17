@@ -10,12 +10,30 @@
           crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-  @media (max-width: 768px) { /* Adjust styles for smaller screens */
-      #home img {
-          object-fit: cover;
-          height: 110vh; /* Ensure full height on smaller devices */
-      }
-  }
+    html{
+            scroll-behavior: smooth;
+        }
+        body{
+            background: url(background-travel.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: monospace;
+        }
+        @media (max-width: 1080px) { /* Adjust styles for smaller screens */
+            #home img {
+                object-fit: cover;
+                height: auto; /* Ensure full height on smaller devices */
+                width: auto;
+            }
+        }
+        @media (max-height: 1920px) { /* Adjust styles for smaller screens */
+            #home img {
+                object-fit: cover;
+                height: auto; /* Ensure full height on smaller devices */
+                width: auto;
+            }
+        }
 </style>
   
 </head>
