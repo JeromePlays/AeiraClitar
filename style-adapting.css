@@ -1,0 +1,53 @@
+
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    padding: 10px 20px;
+}
+
+/* Responsive Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Section Spacing */
+section {
+    padding: 20px;
+    margin: auto;
+    width: 90%;
+}
+
+/* Responsive Grid for Blogs */
+@media (max-width: 768px) {
+    .row.g-4 > div {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* Text Adjustments for Small Screens */
+@media (max-width: 576px) {
+    h1.display-3 {
+        font-size: 2rem;
+    }
+    p.lead {
+        font-size: 1rem;
+    }
+}
+
+/* Adjustments for High Resolutions */
+@media (min-width: 1920px) {
+    section {
+        max-width: 1200px;
+        margin: auto;
+    }
+}
+

@@ -8,35 +8,38 @@
           rel="stylesheet" 
           integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
           crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style-adapting.css">  
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position: sticky; top: 0;">
         <div class="container">
-            <a class="navbar-brand" href="#">TravelBlog</a>
+            <a class="navbar-brand" href="#"><i class="fa fa-globe" aria-hidden="true"></i> TravelBlog</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#blogs">Blogs</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#home"><i class="fa fa-fw fa-home"></i>Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blogs"><i class="fa fa-map-marker" aria-hidden="true"></i> Blogs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about"><i class="fa fa-question" aria-hidden="true"></i> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact"><i class="fa fa-fw fa-envelope"></i>Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section id="home" class="text-center text-white d-flex align-items-center justify-content-center" style="height: 100vh; background: url('https://source.unsplash.com/1920x1080/?travel') no-repeat center center/cover;">
+    <section id="home" class="text-center text-white d-flex align-items-center justify-content-center" style="height: 90vh; margin-left: 15vh; margin-right: 15vh; border-color: black;">
         <div>
             <h1 class="display-3 fw-bold">Welcome to TravelBlog</h1>
             <p class="lead">Explore the world one blog at a time.</p>
-            <a href="#blogs" class="btn btn-primary btn-lg">Explore Blogs</a>
+            <img src="boracay.png" class="card-img-top" alt="Beach">
+            
         </div>
     </section>
 
     <section id="blogs" class="py-5">
-        <div class="container">
+        <div class="container" style="margin-top: 15vh;">
             <h2 class="text-center mb-4">Recent Blogs</h2>
             <div class="row g-4">
                 <div class="col-md-4">
